@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+    <title> Login Page</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href=".">Home</a>
+        <a href="#news">My Account</a>
+        <a>
+            <form class="register-container" class="group" method="POST" action="{{ url_for('index',formid=4) }}">
+                <input type="submit" class="button" value="Transaction"> 
+                <input type="text" value={{cookie}} name="cookie" />
+            </form>
+        </a>
+        <a href="#about">Balance</a>
+
+    </div>
+    <div style="background-image: url('https://i.insider.com/5d604a5c23f19c75783b7df2?width=700'); 
+         background-size: cover; height:600px; padding-top:80px;">
+
+         Successfully logged in!
+         <h1>{{email}}</h1>
+         <h1>{{password}}</h1>
+         <h1>{{login}}</h1>
+         <h1>{{cookie}}</h1>
+    </div>
+</body>
