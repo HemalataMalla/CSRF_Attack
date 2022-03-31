@@ -1,0 +1,3 @@
+shushma	22	2000
+hema	22	2999
+sowmya	22	5000
