@@ -8,11 +8,11 @@
     <div class="topnav">
         <a class="active" href=".">Home</a>
         <a href="#news">My Account</a>
-        <a>
-            <form class="register-container" class="group" method="POST" action="{{ url_for('index',formid=4) }}">
+        <a href="/trans" style="text-align: center;">Transaction
+            <!-- <form class="register-container" class="group" method="POST" action="{{ url_for('index',formid=4) }}">
                 <input type="submit" class="button" value="Transaction"> 
                 <input type="text" value={{cookie}} name="cookie" />
-            </form>
+            </form> -->
         </a>
         <a href="#about">Balance</a>
 
@@ -26,4 +26,10 @@
          <h1>{{login}}</h1>
          <h1>{{cookie}}</h1>
     </div>
+
+    <!-- <script type="text/javascript">
+        var client_cookie = cookie|tojson
+    </script>
+    <script type="text/javascript" src="app.js"></script>
+    <a href="/attack">Click Here</a> -->
 </body>
