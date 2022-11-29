@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+    <title> Transaction Page</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="/home">Home</a>
+        <a href="/MyAccount">My Account</a>
+        <a class="active" href="/trans">Transaction</a>
+        <a href="/logout">Logout</a>
+
+    </div>
+    <div style="background-image: url('https://i.insider.com/5d604a5c23f19c75783b7df2?width=700'); 
+         background-size: cover; height:600px; padding-top:80px;">
+
+    <div class="login-form">
+        <!-- <form class="login-container" method="POST" action="{{ url_for('index',formid=3) }}"> -->
+            <form class="login-container" method="POST" action="/transaction">
+          
+            <!-- <div class="group">
+                <label for="from" class="label">From</label>
+                <input name ="from" id="from" type="text" class="input">
+            </div> -->
+            <div class="group">
+                <label for="to" class="label"><h1 style="font-size:200%;font-family:verdana;color:red;">To</h1></label>
+                <input name="to" id="to" type="text" class="input">
+            </div>
+            <div class="group">
+                <label for="amount" class="label"><h1 style="font-size:200%;font-family:verdana;color:red;">Amount</h1></label>
+                <input name ="amount" id="amount" type="text" class="input">
+            </div>
+            <div class="group">
+                <input type="hidden" value={{cookie}} name="cookie" />
+            </div>
+            <div> <input type="hidden" value={{token}} name="token"></div>
+            <div class="group">
+                <button type=”submit” class="button"> Submit </button> 
+                <!-- <input type="submit" class="button" value="Login"> -->
+            </div>
+            <!-- <h3 text-color:red>{{msg}}</h3> -->
+        </form>
+        <a><h4 style="font-size:150%;font-family:verdana;color:rgb(255, 153, 0);">{{msg}}</h4></a>
+        <!-- <h2> token: {{token}}</h2>
+        <h2>client: {{client_token}} token</h2> -->
+        <!-- <a href="/attack">jdxjbbj</a> -->
+    </div>
+    </div>
+    </body>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+    <title> Login Page</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="/home">Home</a>
+        <a href="/MyAccount">My Account</a>
+        <a href="/trans" style="text-align: center;">Transaction</a>
+        <a href="/logout">Logout</a>
+    </div>
+    
+    <div style="background-image: url('https://i.insider.com/5d604a5c23f19c75783b7df2?width=700'); 
+         background-size: cover; height:600px; padding-top:80px;">
+
+        <h1 style="text-align:center;font-size:300%;font-family:verdana;color:red;"> Successfully logged in!</h1>
+        <h1 style="text-align:center;font-size:300%;font-family:verdana;color:red;">Welcome {{username_login}} !!</h1>
+    </div>
+
+</body>

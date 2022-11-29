@@ -1,0 +1,8 @@
+1000	saishushma.maturi@gmail.com	shushma	sweety1@3	student	100000
+1001	saishushma.maturi@gmail.com	sweety	1234	doctor	100000
+1002	shushma	sowmya	sweety1@3	abc	100000
+1003	saishushma.maturi@gmail.com	hema	1234g	sweety	100000
+1004	saishushma.maturi@gmail.com	sweety1	sdhgwd	doctor	100000
+1005	malla.hemalata@students.iiit.ac.in	user1	user1	student	93000
+1006	user2	user2	user1	student	107000
+1007	user3@gmail.com	user3	user3	student	100000
